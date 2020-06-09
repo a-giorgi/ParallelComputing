@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="it.parallelComputing2020.view.Gui">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="572" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="7a228" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="3812e" binding="tabbedPane1" default-binding="true">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="a73ac" binding="imageListPanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Image List"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="f162" binding="imageListBtnWrapper" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="88332" class="javax.swing.JButton" binding="sequentially">
+                        <constraints/>
+                        <properties>
+                          <horizontalTextPosition value="2"/>
+                          <text value="Load images sequentially"/>
+                        </properties>
+                      </component>
+                      <component id="2f4c6" class="javax.swing.JButton" binding="parallel">
+                        <constraints/>
+                        <properties>
+                          <text value="Load images in parallel"/>
+                        </properties>
+                      </component>
+                      <component id="38f4e" class="javax.swing.JButton" binding="changeFolderButton" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <text value="Change Folder"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="b1278" class="javax.swing.JLabel" binding="infoLabel">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <text value="Multiple Image Reader v 1.0"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="b74e7">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="3e427" class="javax.swing.JTable" binding="table1" default-binding="true">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="cbb37" binding="imagePanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Image Viewer"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="58eef" class="javax.swing.JLabel" binding="displayImage">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Select an image to be displayed here"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="3bcd1" binding="statsPanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Stats"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="c01fc" class="javax.swing.JLabel" binding="statsLabel">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="644a7" binding="benchmarkPanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Benchmark"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="77fcd" layout-manager="GridBagLayout">
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="2043a" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="0.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <text value="Min # of threads:"/>
+                        </properties>
+                      </component>
+                      <component id="c5666" class="javax.swing.JSpinner" binding="minThreads" custom-create="true">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="0.0" weighty="0.0"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="bfd82" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="0.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <text value="       "/>
+                        </properties>
+                      </component>
+                      <component id="e88ff" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="0.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <text value="Max # of threads:"/>
+                        </properties>
+                      </component>
+                      <component id="ad8d5" class="javax.swing.JSpinner" binding="maxThreads" custom-create="true">
+                        <constraints>
+                          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="0.0" weighty="0.0"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="fcece" class="javax.swing.JButton" binding="changeFolderButton1" default-binding="true">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="0.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <text value="Change Folder"/>
+                        </properties>
+                      </component>
+                      <component id="d4f2b" class="javax.swing.JButton" binding="startBenchmarkButton" default-binding="true">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="0.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <text value="Start Benchmark!"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="680cc" class="javax.swing.JLabel" binding="pathLabel">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="980c9">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="ef1e3" class="javax.swing.JLabel" binding="outputLabel">
+                        <constraints/>
+                        <properties>
+                          <horizontalAlignment value="0"/>
+                          <horizontalTextPosition value="0"/>
+                          <text value="&lt;html&gt;Images inside the selected folder will be loaded sequentially and in parallel with different &lt;br&gt;numbers of concurrent threads. Once done, stats will be displayed here.&lt;/html&gt; "/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="3f57" binding="info" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Info"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="cbc1e" class="javax.swing.JLabel">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="&lt;html&gt;&lt;div style=&quot;font-size:20pt;text-align:center&quot;&gt;&lt;span&gt;&lt;b style=&quot;font-size:25pt&quot;&gt;University Of Florence&lt;/b&gt;&lt;br&gt;Parallel Computing 2020&lt;br&gt;Multithread Image Viewer&lt;span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15pt;&quot;&gt;Mid Term Assignment&lt;/span&gt;&lt;br&gt;&lt;br&gt; &lt;span style=&quot;font-size:15pt;&quot;&gt;Made by:&lt;br&gt; Edoardo Cagnes &lt;br&gt; Andrea Giorgi&lt;/span&gt;&lt;/div&gt;&lt;/html&gt;"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
