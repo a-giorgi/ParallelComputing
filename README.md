@@ -13,10 +13,12 @@ This soffware is made in Java and to be executed it requires the Java Runtime En
 It is developed with IntelliJ Idea Community ([https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/))
 
 The main purpose of this sofware is to compare performances between sequentially and parallel image loading.
-Detailed information about performances and development will be descripted inside the assignent paper (it has still to be written)
+Detailed information about performances and development are described inside the assignent paper (Multithread Image Reader with Java Threads.pdf)
 
 # Final Term
-For the Final Term assignment we've made a DES Password Decryption (still in development)
+For the Final Term assignment, we've made a DES Password Decryption software with a sequential implementation in C++ and two parallel variants: one made with OpenMP and the other with CUDA.
+
+The main purpose of this software is to compare the performances between the sequentially and CPU/GPU parallel DES Password Decryption using a brute force approach. Detailed information about performances and development can be found inside the assignment paper (Des Password Decryption.pdf)
 
 # References
 
